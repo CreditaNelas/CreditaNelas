@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/lipe82/databases/CreditaNelas",
+      "type": "mssql.azure",
+      "connectionId": "CreditaNelas"
+    }
+  }
+}
