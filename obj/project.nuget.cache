@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ihKHNqcapY12JDe71TWamX9Tl5ZVV48t1VOj9f4+/KTR6/J4N7uOuRe7zdtGKunU98pqz23wFd2VUuFu5QCkyg==",
+  "dgSpecHash": "gIQL2Vwo1d0T7Dx8OXDeikx42coPRhoWGrlgTla7vzndcsNy4xsS5typW5i0QMQ8fLADk0PP9HwnYAiipsM9uw==",
   "success": true,
-  "projectFilePath": "C:\\CreditaFinal\\CreditaNelas (2)\\CreditaNelas\\CreditaNelas.csproj",
+  "projectFilePath": "C:\\Users\\Remakker\\Downloads\\CreditaNelasFinal\\CreditaNelas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Remakker\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Remakker\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
