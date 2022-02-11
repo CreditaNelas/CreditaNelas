@@ -4,63 +4,82 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - CreditaNelas</title>
+    <!-- Boostrap CDN -->
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
-<body style="background: #efefef;">
+<body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/img/CreditaNelas_transparenteNovaFonteCOPIA.png" style="width: 250px"/></a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/img/CreditaNelas_transparenteNovaFonteCOPIA.png" style="width: 250px" /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Postagens" asp-action="Index">Postagens</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Postagens" asp-action="Index">Projetos</a>
                         </li>
                     </ul>
+                    <ul class="navbar-nav ml-auto">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item"> Olá @User.Identity.Name </li>
+                            <li class="nav-item">
+                                <form class="form-inline" asp-controller="Autenticacao" asp-action="Logout" method="post">
+                                    <button type="submit" class="nav-link text-dark btn btn-link">Logout</button>
+                                </form>
+                            </li>
+
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Autenticacao" asp-action="Login">
+                                     <i class="fa-solid fa-right-to-bracket"></i> Login
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-primary" asp-area="" asp-controller="Autenticacao" asp-action="Cadastrar">Registre-se</a>
+                            </li>
+
+                        }
+                    </ul>
                 </div>
-
-                <ul class="nav navbar-nav navbar-right">
-                    @if (User.Identity.IsAuthenticated)
-                    {
-                        <li class="nav-item"> Olá @User.Identity.Name </li>
-                        <li class="nav-item">
-                            <form class="form-inline" asp-controller="Autenticacao" asp-action="Logout" method="post">
-                                <button type="submit" class="nav-link text-dark btn btn-link">Logout</button>
-                            </form>
-                        </li>
-
-                    }
-                    else
-                    {
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Autenticacao" asp-action="Cadastrar">Registre-se</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Autenticacao" asp-action="Login">Login</a>
-                        </li>
-
-                    }
-                </ul>
             </div>
         </nav>
     </header>
-    <div class="container" >
+    <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer style="margin-top: 10px; text-align: center;">
-        <div class="container">
+    <footer class="sticky-footer">
+        <div class="text-center pt-4">
+            <div class="social">
+                <div class="d-flex flex-row justify-content-center">
+                    <a asp-area="">
+                        <i class="fab fa-facebook-f m-2"></i>
+                    </a>
+                    <a asp-area="">
+                        <i class="fab fa-instagram m-2"></i>
+                    </a>
+                    <a asp-area="">
+                        <i class="fab fa-twitter m-2"></i>
+                    </a>
+                </div>
+            </div>
+            <hr>
             &copy; 2022 - CreditaNelas - <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
         </div>
     </footer>
