@@ -106,9 +106,8 @@ body {
 }
 
 .create {
-    border-radius: 4px;
-    box-shadow: 0px 0px 10px 0px #000;
-    background: #c8a2c8;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px 0px #9583b6;
 }
 /* ---------- Fim Página Create ---------- */
 
@@ -121,9 +120,8 @@ body {
 }
 
 .edit {
-    border-radius: 4px;
-    box-shadow: 0px 0px 10px 0px #000;
-    background: #c8a2c8;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px 0px #9583b6;
 }
 /* ----------- Fim Página Edit --------- */
 

@@ -2,10 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\Views",
+    "\\Views\\Autenticacao",
     "\\Views\\Postagens",
+    "\\Views\\Shared",
     "\\wwwroot",
     "\\wwwroot\\css"
   ],
-  "SelectedNode": "\\Views\\Postagens\\Create.cshtml",
+  "SelectedNode": "\\Views\\Shared\\_Layout.cshtml",
   "PreviewInSolutionExplorer": false
 }

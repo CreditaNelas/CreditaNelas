@@ -11,16 +11,16 @@
         <hr />
         <dl class="row">
             <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Id_Usuario)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Id_Usuario)
+            </dd>
+            <dt class="col-sm-2">
                 @Html.DisplayNameFor(model => model.Titulo)
             </dt>
             <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.Titulo)
-            </dd>
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.Descricao)
-            </dt>
-            <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.Descricao)
             </dd>
             <dt class="col-sm-2">
                 @Html.DisplayNameFor(model => model.Whatsapp)
@@ -29,10 +29,10 @@
                 @Html.DisplayFor(model => model.Whatsapp)
             </dd>
             <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.Id_Usuario)
+                @Html.DisplayNameFor(model => model.Descricao)
             </dt>
             <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.Id_Usuario)
+                @Html.DisplayFor(model => model.Descricao)
             </dd>
         </dl>
     </div>
@@ -41,5 +41,5 @@
 <form asp-action="Delete">
     <input type="hidden" asp-for="Id_Postagem" />
     <input type="submit" value="Deletar" class="btn btn-danger" />
-    <a class="btn btn-primary" asp-action="Index"><i class="fa-solid fa-table-list"></i> Voltar para lista</a>
+    <a asp-action="Index">Voltar para lista</a>
 </form>
