@@ -45,6 +45,6 @@
 
 <form asp-action="Delete">
     <input type="hidden" asp-for="Id_Postagem" />
-    <input type="submit" value="Deletar" class="btn btn-danger" />
-    <a asp-action="Index">Voltar para lista</a>
+    <input type="submit" asp-controller="Postagens" value="Deletar" class="btn btn-danger" />
+    <a asp-controller="Postagens" asp-action="Index">Voltar para lista</a>
 </form>
