@@ -4,7 +4,6 @@
     ViewData["Title"] = "Delete";
 }
 
-
 <section class="delete-body">
     <div class=container>
         <h4 class="text-center">Tem certeza que deseja excluir?</h4>
@@ -21,6 +20,12 @@
             </dt>
             <dd class="col-sm-10">
                 @Html.DisplayFor(model => model.Titulo)
+            </dd>
+	        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UrlImagem)
+            </dt>
+            <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UrlImagem)
             </dd>
             <dt class="col-sm-2">
                 @Html.DisplayNameFor(model => model.Whatsapp)

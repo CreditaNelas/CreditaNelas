@@ -6,14 +6,14 @@
 
 <h1>Index</h1>
 
-<p>
-    <a class="btn btn-primary" asp-action="Create" style="text-decoration: none;"><i class="fas fa-user"></i> Criar Projeto</a>
-</p>
 <table class="table table-borderless text-center">
     <thead class="thead-dark">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Titulo)
+            </th>
+	    <th>
+                @Html.DisplayNameFor(model => model.UrlImagem)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Descricao)
@@ -32,6 +32,9 @@
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Titulo)
+            </td>
+	    <td>
+                <img src="@Html.DisplayFor(modelItem => item.UrlImagem)" alt="" style="width: 250px" />
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Descricao)
