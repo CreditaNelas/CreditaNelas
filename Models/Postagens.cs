@@ -12,6 +12,9 @@ namespace CreditaNelas.Models
         [Required(ErrorMessage = "Escreva um título")]
         public string Titulo { get; set; }
 
+        [Display(Name = "Url da imagem")]
+        public string UrlImagem { get; set; }
+
         [Display(Name = "Nome")]
         [Required(ErrorMessage = "Digite aqui seu nome")]
         public string Nome { get; set; }

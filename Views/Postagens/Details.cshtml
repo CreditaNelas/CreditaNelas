@@ -4,39 +4,47 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+
+<section class="details-body">
+    <div class="container">
+        <h4 class="text-center">Seu Projeto</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Id_Usuario)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Id_Usuario)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Titulo)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Titulo)
+            </dd>
+	        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UrlImagem)
+            </dt>
+            <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UrlImagem)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Whatsapp)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Whatsapp)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Descricao)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Descricao)
+            </dd>
+        </dl>
+    </div>
+</section>
 
 <div>
-    <h4>Postagens</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Titulo)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Titulo)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Descricao)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Descricao)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Whatsapp)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Whatsapp)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Id_Usuario)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Id_Usuario)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id_Postagem">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model.Id_Postagem">Editar</a>
+    <a asp-action="Index">Voltar para lista</a>
 </div>
