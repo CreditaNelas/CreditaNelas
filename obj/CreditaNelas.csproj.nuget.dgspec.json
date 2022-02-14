@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Remakker\\Downloads\\CreditaNelasFinal\\CreditaNelas.csproj": {}
+    "C:\\Users\\Remakker\\Downloads\\CreditaNelasFinal - Copia\\CreditaNelas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Remakker\\Downloads\\CreditaNelasFinal\\CreditaNelas.csproj": {
+    "C:\\Users\\Remakker\\Downloads\\CreditaNelasFinal - Copia\\CreditaNelas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Remakker\\Downloads\\CreditaNelasFinal\\CreditaNelas.csproj",
+        "projectUniqueName": "C:\\Users\\Remakker\\Downloads\\CreditaNelasFinal - Copia\\CreditaNelas.csproj",
         "projectName": "CreditaNelas",
-        "projectPath": "C:\\Users\\Remakker\\Downloads\\CreditaNelasFinal\\CreditaNelas.csproj",
+        "projectPath": "C:\\Users\\Remakker\\Downloads\\CreditaNelasFinal - Copia\\CreditaNelas.csproj",
         "packagesPath": "C:\\Users\\Remakker\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Remakker\\Downloads\\CreditaNelasFinal\\obj\\",
+        "outputPath": "C:\\Users\\Remakker\\Downloads\\CreditaNelasFinal - Copia\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

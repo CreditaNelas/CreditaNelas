@@ -4,25 +4,22 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Projetos</h1>
 
 <table class="table table-borderless text-center">
     <thead class="thead-dark">
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Titulo)
-            </th>
-	    <th>
                 @Html.DisplayNameFor(model => model.UrlImagem)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Titulo)
+            </th>	        
             <th>
                 @Html.DisplayNameFor(model => model.Descricao)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Whatsapp)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Id_Usuario)
             </th>
             <th></th>
         </tr>
@@ -31,11 +28,11 @@
 @foreach (var item in Model) {
         <tr>
             <td>
+                <img src="@Html.DisplayFor(modelItem => item.UrlImagem)" alt="" style="width: 200px" />
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.Titulo)
-            </td>
-	    <td>
-                <img src="@Html.DisplayFor(modelItem => item.UrlImagem)" alt="" style="width: 250px" />
-            </td>
+            </td>    
             <td>
                 @Html.DisplayFor(modelItem => item.Descricao)
             </td>
@@ -43,7 +40,9 @@
                 @Html.DisplayFor(modelItem => item.Whatsapp)
             </td>
             <td>
-                <a asp-action="Details" asp-route-id="@item.Id_Postagem">Ver Detalhes</a> |
+                <a class="btn btn-info"  asp-action="Details" asp-route-id="@item.Id_Postagem">
+                    <i class="fa-solid fa-circle-info"></i>
+                </a> |
                 <a class="btn btn-light" asp-action="Edit" asp-route-id="@item.Id_Postagem">
                     <i class="fas fa-pencil-alt"></i>
                 </a> |
