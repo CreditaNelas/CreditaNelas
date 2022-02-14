@@ -6,7 +6,7 @@ namespace CreditaNelas.Models
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-PFHLVPM; Initial Catalog=CreditaNelas; Integrated Security=True");
+            optionsBuilder.UseSqlServer("Server=DESKTOP-AP4U45K; Initial Catalog=Implement_Credita; Integrated Security=True");
         }
 
         public DbSet<Usuarios> Usuario { get; set; }
