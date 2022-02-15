@@ -4,39 +4,56 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
 
-<div>
-    <h4>Postagens</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Titulo)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Titulo)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Descricao)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Descricao)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Whatsapp)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Whatsapp)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Id_Usuario)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Id_Usuario)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id_Postagem">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+<section class="details-body">
+    <div class="container">
+        <div class="title">
+            <h1 class="text-center">Deseja alterar?</h1>
+            <p class="text-center mt-4">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat
+                neque cum reprehenderit, aspernatur maiores magnam dolorem, nihil,
+                cupiditate culpa quibusdam laborum. Illo magnam sequi dolores
+                placeat vitae iure unde officia!
+            </p>
+        </div>
+
+          <dl class="row mt-5">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Id_Usuario)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Id_Usuario)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Titulo)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Titulo)
+            </dd>
+	        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UrlImagem)
+            </dt>
+            <dd class = "col-sm-10">
+            <input asp-for="UrlImagem" class="form-control" />
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Whatsapp)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Whatsapp)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Descricao)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Descricao)
+            </dd>
+        </dl>
+        <div>
+            <a class="btn btn-custom" asp-action="Edit" asp-route-id="@Model.Id_Postagem">Editar</a>
+            <a class="btn btn-custom" asp-action="Index">Voltar</a>
+        </div>
+    </div>
+</section>
+
+

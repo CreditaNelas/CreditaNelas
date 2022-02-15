@@ -53,15 +53,25 @@ button.accept-policy {
 
 /* Sticky footer styles
 -------------------------------------------------- */
-html {
+/*html {
   position: relative;
   min-height: 100%;
-}
+}*/
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    /* margin-bottom: 60px; */
+    min-height: 100vh;
+    background: #fff;
+    font-family: 'Rubik', sans-serif;
 }
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #522c43;
+}
+
+/* ---------- Footer ---------- */
 .footer {
   margin-top: 10px;
   position: absolute;
@@ -70,3 +80,224 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+.sticky-footer {
+    position: sticky;
+    top: 100%;
+    background: #522c43;
+}
+
+.icon {
+    color: #e9bdb0;
+    font-size: 1.2rem;
+    transition: .3s;
+}
+
+.icon:hover {
+        color: white;
+}
+
+a {
+    text-decoration: none;
+}
+/* ---------- Cadastro ---------- */
+.register-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+/* ---------- Fim Cadastro ---------- */
+
+/* ---------- Login ---------- */
+.login-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 70vh; 
+}
+
+.control-label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #434343;
+}
+
+.form-control {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.7);
+    border-color: rgb(0, 0, 0, 0.4);
+}
+
+.form-control:focus {
+        border-block-color: #e9bdb0;
+        box-shadow: #e9bdb0;
+}
+
+.btn-custom {
+    background: #e9bdb0;
+    border-color: #e9bdb0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+
+.btn-custom:focus,
+.btn-custom:hover,
+.btn-custom:active,
+.btn-custom:active:focus {
+        background: #522c43;
+        border-color: #522c43;
+        color: #fff;
+        letter-spacing: 0.5px;
+}
+/* ---------- Fim Login ---------- */
+
+/* ---------- Página Create ---------- */
+.create-body {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.create {
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px 0px #9583b6;
+}
+/* ---------- Fim Página Create ---------- */
+
+/* ---------- Página Edit ---------- */
+.edit-body {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.edit {
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px 0px #9583b6;
+}
+/* ----------- Fim Página Edit --------- */
+
+/* ---------- Página Details ---------- */
+.details-body {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    min-height: 70vh;
+  
+}
+/* Fim da Página Details ---------- */
+
+/* ---------- Página do Delete ---------- */
+.delete-body {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    min-height: 70vh;
+}
+/* ---------- Fim da Página Delete ---------- */
+
+/* ---------- Página Index ---------- */
+post-body {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    min-height: 70vh;
+}
+
+/* ---------- Página Layout ---------- */
+.navbar-nav {
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 400;
+}
+
+.nav-item {
+    font-size: 1.1rem;
+}
+
+.btn-register {
+    background: #e9bdb0;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-register:hover {
+    background: #522c43;
+}
+
+.btn-logout {
+    background: #e9bdb0;
+    
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-logout:hover {
+    background: #522c43;
+}
+
+.btn-project {
+    background: #522c43;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-project:hover {
+    background: #e9bdb0;
+    color: #522c43;
+}
+
+.login {
+    color: #e9bdb0;
+}
+/* ----------- Fim Layout ----------- */
+
+/* ---------- Página Index ---------- */
+post-body {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    min-height: 70vh;
+}
+
+/* ---------- Index ----------- */
+
+.section-4 .row .col-md-7, .col-md-5 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+img {
+    border-radius: 4px;
+}
+
+.card {
+   /* margin: 20px 10px;*/
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-body {
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.1);
+}
+
+.btn-card {
+    margin: 10px 10px;
+}
+
+p {
+    font-size: 1.2rem;
+}
+

@@ -6,11 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CreditaNelas.Models;
-using Microsoft.AspNetCore.Authorization;
 
 namespace CreditaNelas
 {
-    [Authorize]
     public class PostagensController : Controller
     {
         private readonly Context _context;
@@ -21,7 +19,6 @@ namespace CreditaNelas
         }
 
         // GET: Postagens
-        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Postagem.ToListAsync());
@@ -56,7 +53,7 @@ namespace CreditaNelas
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id_Postagem,Titulo,Nome,Descricao,Whatsapp,Id_Usuario")] Postagens postagens)
+        public async Task<IActionResult> Create([Bind("Id_Postagem,Titulo,UrlImagem,Nome,Descricao,Whatsapp,Id_Usuario")] Postagens postagens)
         {
             if (ModelState.IsValid)
             {
@@ -88,7 +85,7 @@ namespace CreditaNelas
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id_Postagem,Titulo,Nome,Descricao,Whatsapp,Id_Usuario")] Postagens postagens)
+        public async Task<IActionResult> Edit(int id, [Bind("Id_Postagem,Titulo,UrlImagem,Nome,Descricao,Whatsapp,Id_Usuario")] Postagens postagens)
         {
             if (id != postagens.Id_Postagem)
             {
