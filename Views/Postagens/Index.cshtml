@@ -25,13 +25,9 @@
             <div class="card mt-3 mb-2" style="width: 18rem;">
                 <img class="card-img-top" src="@Html.DisplayFor(modelItem => item.UrlImagem)" alt="Card image cap">
                 <div class="card-body text-center">
-                    <h5 class="card-title" style="font-weight: 600;">Título</h5>
-                    <div class="">
-                        @Html.DisplayFor(modelItem => item.Titulo)
-                    </div>
+                    <h5 class="card-title" style="font-weight: 600;"> @Html.DisplayFor(modelItem => item.Titulo) </h5>
 
-                    <h5 class="card-text" style="font-weight: 600;">Descrição</h5>
-                    <div class="">
+                    <div class="card-text">
                         @Html.DisplayFor(modelItem => item.Descricao)
                     </div>
 
