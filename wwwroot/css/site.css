@@ -230,19 +230,18 @@ post-body {
 }
 
 .btn-register:hover {
-        background: #522c43;
+    background: #522c43;
 }
 
 .btn-logout {
-    background: #522c43;
-    color: white;
+    background: #e9bdb0;
+    
     font-weight: 500;
     transition: 0.3s;
 }
 
 .btn-logout:hover {
-    background: #e9bdb0;
-    color: #522c43;
+    background: #522c43;
 }
 
 .btn-project {
@@ -281,13 +280,13 @@ img {
     border-radius: 4px;
 }
 
-.card-home {
-    margin: 20px 10px;
+.card {
+   /* margin: 20px 10px;*/
     transition: .3s;
 }
 
-.card-home:hover {
-        transform: translateY(-10px);
+.card:hover {
+    transform: translateY(-10px);
 }
 
 .card-body {
@@ -301,3 +300,4 @@ img {
 p {
     font-size: 1.2rem;
 }
+
