@@ -13,12 +13,14 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <nav class="navbar navbar-expand-lg" style="background: #e9bdb0;">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/img/Logo_5A2F43.png" style="width: 250px" /></a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/img/logo.png" style="width: 240px; display: flex; align-items: center;" /></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <div class="d-inline-block d-lg-none ml-md-0 ml-auto py-3">
+                        <i class="fas fa-bars" style="color: #522c43"></i>
+                    </div>
                 </button>
                 <div class="navbar-collapse collapse">
                     <ul class="navbar-nav ml-auto">
@@ -34,12 +36,12 @@
                         @if (User.Identity.IsAuthenticated)
                         {
                             <li class="nav-item" style="margin: 9px 10px 5px 0;"> Olá, @User.Identity.Name </li>
-                            <a class="btn btn-project" asp-controller="Postagens" asp-action="Create" style="text-decoration: none; margin-right: 10px">
-                                <i class="fas fa-user"></i> Criar Projeto
+                            <a class="cprojeto" asp-controller="Postagens" asp-action="Create" style="text-decoration: none; margin-right: 10px; display: flex; align-items: center;">
+                                Criar Projeto
                             </a>
                             <li class="nav-item">
                                 <form class="form-inline" asp-controller="Autenticacao" asp-action="Logout" method="post">
-                                    <button type="submit" class="nav-link text-light btn btn-logout" style="margin: 1px;">Logout</button>
+                                    <button type="submit" class="btn btn-custom-logout" style="margin: 1px;">Logout</button>
                                 </form>
                             </li>
 
@@ -47,12 +49,12 @@
                         else
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Autenticacao" asp-action="Login">
-                                    <i class="login fa-solid fa-right-to-bracket"></i> Login
+                                <a class="nav-link" asp-area="" asp-controller="Autenticacao" asp-action="Login">
+                                    <i class="fa-solid fa-right-to-bracket"></i> Login
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="btn btn-register text-light" asp-area="" asp-controller="Autenticacao" asp-action="Cadastrar">Registre-se</a>
+                                <a class="btn btn-custom-register" asp-area="" asp-controller="Autenticacao" asp-action="Cadastrar">Registre-se</a>
                             </li>
 
                         }
@@ -68,25 +70,26 @@
         </main>
     </div>
 
-    <footer class="sticky-footer mt-5">
+    <footer class="sticky-footer mt-5" style="background: #e9bdb0;">
         <div class="container text-center text-md-left">
             <div class="row">
                 <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
-                    <h5 class="mb-4 text-light">Sobre o Projeto</h5>
-                    <p class="text-light">
-                        O Creditanelas é um projeto social com enfoque ao público
-                        minoritário mulheres.
+                    <h3 class="mb-4 text-dark text-center">Sobre o Projeto</h3>
+                    <p class="text-dark text-center" style="font-weight: 500">
+                        O <span class="span-one">CreditaNelas</span> é um projeto social com enfoque ao
+                        público minoritário mulheres.
                     </p>
-                    <p class="text-light">
-                        Idealizado pela equipe 45 do curso Recode Pro (instituição sem
-                        fins lucrativos).
+                    <p class="text-dark text-center" style="font-weight: 500">
+                        Idealizado pela equipe 45 do curso
+                        <span>Recode Pro</span> (instituição sem fins lucrativos).
                     </p>
                 </div>
 
                 <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
-                    <h5 class="mb-4 text-light">Equipe #45</h5>
+                    <h3 class="mb-4 text-dark text-center">Equipe #45</h3>
 
-                    <ul class="list-unstyled text-light">
+                    <ul class="list-unstyled text-dark text-center"
+                        style="font-weight: 500">
                         <li>
                             <p>Amonique Freitas</p>
                         </li>
@@ -100,18 +103,16 @@
                             <p>João Victor</p>
                         </li>
                         <li>
-                            <p>Maria Clara</p>
-                        </li>
-                        <li>
                             <p>Ticiana Silva</p>
                         </li>
                     </ul>
                 </div>
 
                 <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
-                    <h5 class="mb-4 text-light">Contato</h5>
+                    <h3 class="mb-4 text-dark text-center">Contato</h3>
 
-                    <ul class="list-unstyled text-light">
+                    <ul class="list-unstyled text-dark text-center"
+                        style="font-weight: 500">
                         <li>
                             <p>
                                 <i class="icon fas fa-envelope mr-3"></i>creditanelas@gmail.com
@@ -122,12 +123,30 @@
                         </li>
                     </ul>
                 </div>
+
+                <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+                    <!-- Social buttons -->
+                    <h3 class="mb-4 text-dark text-center">Conecte-se conosco</h3>
+
+                    <!-- Facebook -->
+                    <a href="#" style="text-decoration: none">
+                        <i class="fab fa-facebook-f m-2"></i>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="#" style="text-decoration: none">
+                        <i class="fab fa-instagram m-2"></i>
+                    </a>
+                    <!-- Twitter +-->
+                    <a href="#" style="text-decoration: none">
+                        <i class="fab fa-twitter m-2"></i>
+                    </a>
+                </div>
             </div>
         </div>
 
-        <div class="footer-copyright text-center text-dark py-3"
-             style="background: #e9bdb0">
-            &copy; 2022 - CreditaNelas - <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+        <div class="footer-copyright text-center text-center py-3"
+             style="background: #522c43; color: white;">
+            &copy; 2022 - CreditaNelas - <a asp-area="" asp-controller="Home" asp-action="Index" style="text-decoration: none; color:#e9bdb0;">Home</a>
         </div>
     </footer>
     
