@@ -1,5 +1,5 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
+﻿@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 a.navbar-brand {
   white-space: normal;
@@ -51,138 +51,317 @@ button.accept-policy {
   line-height: inherit;
 }
 
-/* Sticky footer styles
+/* NOSSO CSS
 -------------------------------------------------- */
-/*html {
-  position: relative;
-  min-height: 100%;
-}*/
-
-body {
-    /* Margin bottom by footer height */
-    /* margin-bottom: 60px; */
-    min-height: 100vh;
-    background: #fff;
-    font-family: 'Rubik', sans-serif;
+/* NAVBAR */
+.navbar-toggler {
+    border: none;
+}
+.navbar-nav {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+.nav-link {
+    color: #212529 !important;
+}
+.nav-link:hover {
+    color: #522c43 !important;
+}
+i {
+    color: #522c43;
+}
+.btn-custom-logout {
+    background: #522c43;
+    color: #fff;
+    font-weight: 500;
+}
+.btn-custom-logout:hover {
+    color: white;
+}
+.btn-custom-register {
+    background: #522c43;
+    color: #fff;
+    font-weight: 500;
+}
+.btn-custom-register:hover {
+    color: white;
+}
+.cprojeto {
+    color: #522c43;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: 'Cormorant Garamond', sans-serif;
+}
+.cprojeto:hover {
+    color: #ff69b4;
 }
 
-h1 {
+/* LAYOUT */
+body {
+    overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: #f6f9ff;
+}
+h1, h3 {
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-weight: 600;
     color: #522c43;
 }
 
-/* ---------- Footer ---------- */
-.footer {
-  margin-top: 10px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
-}
-
-.sticky-footer {
-    position: sticky;
-    top: 100%;
-    background: #522c43;
-}
-
-.icon {
-    color: #e9bdb0;
-    font-size: 1.2rem;
-    transition: .3s;
-}
-
-.icon:hover {
-        color: white;
-}
-
-a {
-    text-decoration: none;
-}
-/* ---------- Cadastro ---------- */
-.register-body {
+/* PÁGINA CADASTRO */
+.content {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
     min-height: 100vh;
-}
-/* ---------- Fim Cadastro ---------- */
-
-/* ---------- Login ---------- */
-.login-body {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 0;
-    min-height: 70vh; 
 }
-
 .control-label {
-    font-size: 1.2rem;
+    font-size: 16px;
     font-weight: 500;
     color: #434343;
 }
 
 .form-control {
-    font-size: 1.1rem;
+    min-height: 48px;
+    font-size: 16px;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.7);
-    border-color: rgb(0, 0, 0, 0.4);
+    border-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
 }
 
 .form-control:focus {
-        border-block-color: #e9bdb0;
-        box-shadow: #e9bdb0;
+   border-color: rgb(226, 172, 238);
+   box-shadow: 0 0 0 0.2rem rgb(226, 172, 238);
 }
 
 .btn-custom {
-    background: #e9bdb0;
-    border-color: #e9bdb0;
+    background: #522c43;
+    border-color: #522c43;
     color: #fff;
-    font-weight: 600;
     font-size: 1.2rem;
-    transition: 0.5s;
+    font-weight: 600;
+    min-height: 52px;
+    transition: .5s;
 }
-
 .btn-custom:focus,
 .btn-custom:hover,
 .btn-custom:active,
 .btn-custom:active:focus {
-        background: #522c43;
-        border-color: #522c43;
-        color: #fff;
-        letter-spacing: 0.5px;
-}
-/* ---------- Fim Login ---------- */
+    background: #e9bdb0;
+    border-color: #e9bdb0;
+    color: #fff;
+    letter-spacing: 0.5px;
+} 
 
-/* ---------- Página Create ---------- */
-.create-body {
+/* PÁGINA LOGIN */
+.login-body {
     display: flex;
     align-items: center;
-    margin: 0;
+    justify-content: center;
     min-height: 100vh;
 }
-
-.create {
-    border-radius: 2px;
-    box-shadow: 0px 0px 10px 0px #9583b6;
+  
+/* PÁGINA PROJETOS */
+.card-projeto {
+    transition: .3s;
 }
+
+.card-projeto:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 10px #e9bdb0;
+}
+
+/* HOME */
+/* About us */
+.about {
+    display: flex;
+    min-height: 100vh;
+}
+.about .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+.about .text p {
+    color: #000;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+span {
+    color: #522c43;
+}
+.span-one {
+    color: #522c43;
+    font-weight: 600;
+    font-size: 1.4rem;
+    font-family: 'Cormorant Garamond', sans-serif;
+}
+/* Testimonials */
+.testimonials h1 {
+    text-align: center;
+}
+.testimonials .row {
+    margin-top: 30px;
+}
+.col-md-4 {
+    margin: 40px auto;
+}
+.profile {
+    padding: 70px 10px 10px;
+    background-color: #e9bdb0;
+}
+.profile img {
+    top: -60px;
+    position: absolute;
+    left: calc(50% - 60px);
+    border: 10px solid white;
+}
+.profile h3 {
+    font-size: 25px;
+    margin-top: 15px;
+    color: #522c43;
+    font-style: italic;
+}
+.profile:hover {
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.user {
+    width: 130px;
+    height: 120px;
+    border-radius: 50%;
+}
+blockquote {
+    font-size: 16px;
+    line-height: 30px;
+}
+blockquote p span {
+    font-size: 40px;
+    position: relative;
+    line-height: 20px;
+    bottom: -15px;
+    color: #522c43;
+}
+code {
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: 'Cormorant Garamond', sans-serif;
+}
+/* Objective */
+.objective .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+.objective {
+    color: #000;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+/* Cards */
+.vol img {
+    margin-top: -50px;
+}
+.vol .card {
+    border-radius: 0;
+    box-shadow: 5px 5px 15px #522c43;
+    transition: all 1s ease-in;
+   -webkit-transition: all 1s ease-in;
+   -moz-transition: all 1s ease-in;
+}
+.vol .card:hover {
+    background: #522c43;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 5px 5px 10px #e9bdb0;
+    transition: 1s;
+}
+.vol .card:hover h3,
+.vol .card:hover i {
+    color: #e9bdb0;
+    transition: 2s;
+}
+
+/* FOOTER */
+.sticky-footer {
+    position: sticky;
+    top: 100%;
+    background: #522c43;
+}
+.icons {
+    color: #522c43;
+}
+.fa-facebook-f,
+.fa-instagram,
+.fa-twitter {
+    color: #522c43;
+    font-size: 1.2rem;
+    transition: .3s;
+}
+.fa-facebook-f:hover,
+.fa-instagram:hover,
+.fa-twitter:hover {
+    transform: translateY(-10px);
+}
+.icon {
+    color: #522c43;
+}
+
+
+
+
+
+
+
+
+
 /* ---------- Fim Página Create ---------- */
 
 /* ---------- Página Edit ---------- */
-.edit-body {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    min-height: 100vh;
+.btn1 {
+    background: #522C43;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    margin-top: 5%;
 }
 
-.edit {
-    border-radius: 2px;
-    box-shadow: 0px 0px 10px 0px #9583b6;
+
+
+.effect-1 {
+    border: 0;
+    outline: none;
+    width: 100%;
+    padding: 7px 0;
+    border-bottom: 1px solid rgb(155, 65, 65);
 }
+
+    .effect-1 ~ .Focus-border {
+        position: absolute;
+        bottom: 0;
+        left: 50px;
+        width: 0;
+        height: 2px;
+        background-color: #522C43;
+        transition: 0.4s;
+    }
+
+    .effect-1:focus ~ .Focus-border {
+        width: 100%;
+        transition: 0.4s;
+        left: 0;
+    }
 /* ----------- Fim Página Edit --------- */
 
 /* ---------- Página Details ---------- */
@@ -190,6 +369,7 @@ a {
     display: flex;
     align-items: center;
     margin: 0;
+    padding: 10%;
     min-height: 70vh;
   
 }
@@ -200,7 +380,9 @@ a {
     display: flex;
     align-items: center;
     margin: 0;
+    padding: 10%;
     min-height: 70vh;
+    
 }
 /* ---------- Fim da Página Delete ---------- */
 
@@ -212,54 +394,6 @@ post-body {
     min-height: 70vh;
 }
 
-/* ---------- Página Layout ---------- */
-.navbar-nav {
-    font-size: 1.2rem;
-    color: black;
-    font-weight: 400;
-}
-
-.nav-item {
-    font-size: 1.1rem;
-}
-
-.btn-register {
-    background: #e9bdb0;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-.btn-register:hover {
-    background: #522c43;
-}
-
-.btn-logout {
-    background: #e9bdb0;
-    
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-.btn-logout:hover {
-    background: #522c43;
-}
-
-.btn-project {
-    background: #522c43;
-    color: white;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-.btn-project:hover {
-    background: #e9bdb0;
-    color: #522c43;
-}
-
-.login {
-    color: #e9bdb0;
-}
-/* ----------- Fim Layout ----------- */
 
 /* ---------- Página Index ---------- */
 post-body {
@@ -269,35 +403,17 @@ post-body {
     min-height: 70vh;
 }
 
-/* ---------- Index ----------- */
 
-.section-4 .row .col-md-7, .col-md-5 {
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
 
-img {
-    border-radius: 4px;
-}
 
-.card {
-   /* margin: 20px 10px;*/
-    transition: .3s;
-}
 
-.card:hover {
-    transform: translateY(-10px);
-}
 
-.card-body {
-    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.1);
-}
 
-.btn-card {
-    margin: 10px 10px;
-}
 
-p {
-    font-size: 1.2rem;
-}
+
+
+
+
+
+
 
