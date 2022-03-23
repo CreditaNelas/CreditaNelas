@@ -4,8 +4,6 @@
     ViewBag.Title = "Login";
 }
 
-<h2>Login</h2>
-
 @if (TempData["Mensagem"] != null)
 {
     <div class="alert alert-success">
@@ -17,33 +15,28 @@
 {
     @Html.AntiForgeryToken()
     
-    <div class="form-horizontal">
-        <hr />
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        @Html.HiddenFor(model => model.UrlRetorno)
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
-            </div>
+    <section class="login-body">
+        <div class="login-container col-md-4">
+            <form class="login-form">
+                <div class="col-md-6">
+                    <img src="~/img/Logo_5A2F43.png" width="240" alt="logo" />
+                </div>
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.UrlRetorno)
+                <div class="form-group mt-4">
+                     @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label" })
+                     @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                     @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                     @Html.LabelFor(model => model.Senha, htmlAttributes: new { @class = "control-label" })
+                     @Html.EditorFor(model => model.Senha, new { htmlAttributes = new { @class = "form-control" } })
+                     @Html.ValidationMessageFor(model => model.Senha, "", new { @class = "text-danger" })
+                </div>
+                     <input type="submit" value="Entrar" class="btn mt-4 btn-custom btn-block btn-lg" />
+            </form>
         </div>
-
-        <div class="form-group">
-            @Html.LabelFor(model => model.Senha, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Senha, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Senha, "", new { @class = "text-danger" })
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Login" class="btn btn-default" />
-            </div>
-        </div>
-    </div>
+    </section>
 }
 
 @section scripts {

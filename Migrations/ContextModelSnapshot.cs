@@ -41,6 +41,9 @@ namespace CreditaNelas.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("UrlImagem")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("UsuarioId_Usuario")
                         .HasColumnType("int");
 
