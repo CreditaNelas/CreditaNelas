@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/xxFL4oDP4brvmLXpkBcVNtjjfRhErtbgsvN6DA/2PDNvdfgh9WNWFL6jjZdKDMkwNgb69mSiCxK/ZgKL5L+sg==",
+  "dgSpecHash": "C17jHe+OVdLnKId08sM+tlqpcWgLg1JULxGdYM2Ej5NUvsUT0vSuDJD6vtx3hJfSSeoEvSJIYWNIR8qFFpkvYw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Remakker\\Downloads\\CreditaNelasFinal\\CreditaNelas.csproj",
+  "projectFilePath": "C:\\Users\\Remakker\\Downloads\\creditanelas-copia\\CreditaNelas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Remakker\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Remakker\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
@@ -149,8 +149,7 @@
     "C:\\Users\\Remakker\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Remakker\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Remakker\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Remakker\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\Remakker\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+    "C:\\Users\\Remakker\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

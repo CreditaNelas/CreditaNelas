@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Remakker\\Downloads\\CreditaNelasFinal\\CreditaNelas.csproj": {}
+    "C:\\Users\\Remakker\\Downloads\\creditanelas-copia\\CreditaNelas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Remakker\\Downloads\\CreditaNelasFinal\\CreditaNelas.csproj": {
+    "C:\\Users\\Remakker\\Downloads\\creditanelas-copia\\CreditaNelas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Remakker\\Downloads\\CreditaNelasFinal\\CreditaNelas.csproj",
+        "projectUniqueName": "C:\\Users\\Remakker\\Downloads\\creditanelas-copia\\CreditaNelas.csproj",
         "projectName": "CreditaNelas",
-        "projectPath": "C:\\Users\\Remakker\\Downloads\\CreditaNelasFinal\\CreditaNelas.csproj",
+        "projectPath": "C:\\Users\\Remakker\\Downloads\\creditanelas-copia\\CreditaNelas.csproj",
         "packagesPath": "C:\\Users\\Remakker\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Remakker\\Downloads\\CreditaNelasFinal\\obj\\",
+        "outputPath": "C:\\Users\\Remakker\\Downloads\\creditanelas-copia\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -73,12 +73,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.13, 5.0.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -87,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

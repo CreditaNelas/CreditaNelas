@@ -16,18 +16,18 @@
                 placeat vitae iure unde officia!
             </p>
         </div>
-
-          <dl class="row mt-5">
+            <div class="conteiner-fluid">
+                <dl class="row mt-5">
             <dt class="col-sm-2">
                 @Html.DisplayNameFor(model => model.Id_Usuario)
             </dt>
-            <dd class="col-sm-10">
+            <dd class="col-sm-5; form-control">
                 @Html.DisplayFor(model => model.Id_Usuario)
             </dd>
             <dt class="col-sm-2">
                 @Html.DisplayNameFor(model => model.Titulo)
             </dt>
-            <dd class="col-sm-10">
+            <dd class="col-sm-5; form-control">
                 @Html.DisplayFor(model => model.Titulo)
             </dd>
 	        <dt class = "col-sm-2">
@@ -39,13 +39,13 @@
             <dt class="col-sm-2">
                 @Html.DisplayNameFor(model => model.Whatsapp)
             </dt>
-            <dd class="col-sm-10">
+            <dd class="col-sm-5; form-control">
                 @Html.DisplayFor(model => model.Whatsapp)
             </dd>
             <dt class="col-sm-2">
                 @Html.DisplayNameFor(model => model.Descricao)
             </dt>
-            <dd class="col-sm-10">
+            <dd class="col-sm-10; form-control">
                 @Html.DisplayFor(model => model.Descricao)
             </dd>
         </dl>
@@ -53,6 +53,8 @@
             <a class="btn btn-custom" asp-action="Edit" asp-route-id="@Model.Id_Postagem">Editar</a>
             <a class="btn btn-custom" asp-action="Index">Voltar</a>
         </div>
+            </div>
+          
     </div>
 </section>
 

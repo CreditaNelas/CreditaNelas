@@ -12,177 +12,222 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <!-- Jumbotron -->
-    <div class="container">
-        <div class="jumbotron img-jmbo" style="background: #522c43;">
-            <h1 class="text-center text-light mt-4">Bem vindos ao CreditaNelas</h1>
-            <p class="text-muted text-center mt-3" style="font-size: 1.2rem; font-weight: 500;">Conheça nosso Site!</p>
 
-        </div>
-    </div>
-    <!-- Fim Jumbotron -->
-
-    <main class="">
-        <div class="section-1 mt-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <h1>Sobre nós</h1>
-                        <p class="mt-4">
-                            O CreditaNelas é uma plataforma online de apadrinhamento, para empreendedoras
-                            iniciantes e micro-empreendedoras se conectarem com voluntários que acreditam
-                            que colaborar e ensinar muda o pequeno mundo de alguma mulher (cis e trans).
-                        </p>
-                        <p>
-                            Acreditamos que acolher seu problema, nas áreas de formação básica de um pequeno
-                            negócio e te conectar com quem acredita na sua capacidade, é te dar uma mãozinha amiga.
-                            Está precisando de ajuda na sua logo, não sabe fazer uma planilha no Excel para as finanças
-                            do seu empreendimento solo? Venha ser uma mulher acreditada também! Você tem conhecimento,
-                            experiência em alguma área ou atividade específica que pode ajudar no empreendimento das
-                            nossas empreendedoras? Vem ser um acreditador e acredite em alguma empreendedora.
-                        </p>
-                    </div>
-                    <div class="col-md-5" style="margin-top: 100px;">
-                        <img src="~/img/img3.jpg" alt="computador" style="width: 550px;" />
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section-2 mt-5" style="background: #522c43" ;>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <h1 class="text-left" style="margin-top: 140px; color: white;">
-                            Nosso objetivo
-                        </h1>
-                        <p class="text-muted mt-4" style="font-weight: 500;">
-                            Sobre mulheres que já iniciaram, mas por fim acabam se sentindo travadas em determinadas atividades específicas,
-                            fazendo com que os negócios não vão para frente.
-                        </p>
-                        <p class="text-muted" style="font-weight: 500;">
-                            Temos como missão alcançar e mudar o estado dessas mulheres que
-                            se imaginam ou necessitam do empreendedorismo porém que pensam ou optam em
-                            desistir por não ter as habilidades básicas nas variadas áreas de criação
-                            e planejamento para iniciar, manter seu negócio.
-                        </p>
-                    </div>
-                    <div class="col-md-5" style="margin-top: 100px;">
-                        <img src="~/img/img4.jpg" alt="post it" style="width: 550px;" />
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section-3 mt-5">
-            <div class="container">
-                <div class="title">
-                    <h1 class="text-center">Projetos</h1>
-                    <p class="text-center mt-4">
-                        Confira alguns dos nossos cards contendo as informações sobre seu Projeto
+    <main>
+        <!-- About us -->
+        <section class="about py-5">
+            <div class="row align-items-center container my-5 mx-auto">
+                <div class="text col-lg-6 col-md-6 col-12 w-50">
+                    <h1>Sobre nós</h1>
+                    <p class="mt-3">
+                        O <span class="span-one">CreditaNelas</span> é uma plataforma online
+                        de apadrinhamento para empreendedoras iniciantes e
+                        micro-empreendedoras se conectarem com voluntários que acreditam que
+                        colaborar e ensinar muda o pequeno mundo de alguma mulher (cis e
+                        trans).
                     </p>
                 </div>
-
-                <div class="row mt-5">
-                    <div class="col-md-4">
-                        <div class="card text-center" style="margin: 20px 10px;">
-                            <img src="https://www.weact.org/wp-content/uploads/2016/10/Blank-profile.png"
-                                 alt="" />
-                            <div class="card-body">
-                                <h4 class="card-title">Nome</h4>
-                                <h5 class="card-subtitle mt-2">
-                                    Título referente ao que procura
-                                </h5>
-                                <p class="card-text mt-2">
-                                    Um exemplo de texto rápido para demonstrar a descrição do problema enfrentado pela empreendedora iniciante.
+                <div class="img col-lg-6 col-md-6 col-12 w-50">
+                    <img class="img-fluid" src="img/aboutus.png" alt="" />
+                </div>
+            </div>
+        </section>
+        <!-- End About us -->
+        <!-- Testimonials -->
+        <section class="testimonials py-5">
+            <div class="container">
+                <h1>Depoimentos</h1>
+                <p class="text-center mt-4">
+                    Visualize os depoimentos de como o <code>CreditaNelas</code> favoreceu
+                    o empreendimento das nossas <code>acreditadas</code>.
+                </p>
+                <div class="row py-5">
+                    <div class="col-md-4 text-center">
+                        <div class="profile">
+                            <img src="~/img/img1.jpg" alt="" class="user" />
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>Comecei a pouco tempo no empreendedorismo
+                                    mas já passei por muitas tarefas que me senti perdida de como
+                                    prosseguir. Parece simples mas ter uma plataforma em que posso
+                                    recorrer e encontrarei alguém disposto a me ajudar e ensinar é
+                                    incrível.<span>&rdquo;</span>
                                 </p>
-                                <h5 class="card-tel">Whatsapp</h5>
-                                <p class="card-number">(81) 91111-1111</p>
-                                <a class="btn btn-card btn-primary" href="#">
-                                    <i class="fa-solid fa-circle-info"></i>
-                                </a>
-                                |
-                                <a class="btn btn-card btn-light" href="#">
-                                    <i class="fas fa-pencil-alt"></i>
-                                </a>
-                                |
-                                <a class="btn btn-card btn-danger" href="#">
-                                    <i class="fas fa-times"></i>
-                                </a>
+                            </blockquote>
+                            <h3>Ana Nerí</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="profile">
+                            <img src="~/img/img2.jpg" alt="" class="user" />
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>Costumava anotar minhas finanças num papel
+                                    pautado pois não sabia como trabalhar com essas planilhas
+                                    atuais mas agora com o projeto, conseguirei organizar todas
+                                    elas de forma mais segura e eficiente. Muito obrigada,
+                                    <code>CreditaNelas</code>.<span>&rdquo;</span>
+                                </p>
+                            </blockquote>
+                            <h3>Fernanda Torres</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="profile">
+                            <img src="~/img/img3.jpg" alt="" class="user" />
+                            <blockquote>
+                                <p>
+                                    <span>&ldquo;</span>Estava com uma grande carga de
+                                    conhecimento teórico de como entender a persona do meu negócio
+                                    mas congelava na hora de colocar na prática. Depois do
+                                    apadrinhamento, as coisas no meu negócio começaram a ter um
+                                    direcionamento.<span>&rdquo;</span>
+                                </p>
+                            </blockquote>
+                            <h3>Ana Maria</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Testimonials -->
+        
+        <!-- Objective -->
+        <section class="Objective py-5">
+            <div class="row align-items-center container my-5 mx-auto">
+                <div class="img col-lg-6 col-md-6 col-12 w-50">
+                    <img class="img-fluid" src="~/img/solution.png" alt="" />
+                </div>
+                <div class="text col-lg-6 col-md-6 col-12 w-50">
+                    <h1>Nosso objetivo</h1>
+                    <p class="objective mt-3">
+                        Temos como missão alcançar e mudar o estado das mulheres que se
+                        imaginam ou necessitam do empreendedorismo, porém que pensam ou
+                        optam em desistir por não ter as habilidades básicas nas variadas
+                        áreas de criação e planejamento para iniciar, manter seu negócio.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- End Objective -->
+        
+        <!-- Cards -->
+       <section class="vol">
+            <div class="container my-3 py-5 text-center">
+                <div class="row mb-5">
+                    <div class="col">
+                        <h1>Conheça alguns dos nossos voluntários</h1>
+                        <p class="mt-3">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit corporis quas aliquam dolorum ullam debitis deserunt praesentium veniam molestias.</p>
+                        
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="~/img/img7.jpg" alt="" class="user mb-3">
+                                <h3>Taisa Correia</h3>
+                                <h5>Fotógrafa</h5>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Placeat nemo facilis, dolorum reprehenderit molestias quas
+                                    facere commodi corporis et.
+                                </p>
+                                <div class="d-flex flex-row justify-content-center">
+                                    <div class="p-4">
+                                        <a href="#">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </div>
+                                    <div class="p-4">
+                                        <a href="#">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                    <div class="p-4">
+                                        <a href="#">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-4">
-                        <div class="card text-center" style="margin: 20px 10px;">
-                            <img src="https://www.weact.org/wp-content/uploads/2016/10/Blank-profile.png"
-                                 alt="" />
+                        <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Nome</h4>
-                                <h5 class="card-subtitle mt-2">
-                                    Título referente ao que procura
-                                </h5>
-                                <p class="card-text mt-2">
-                                    Um exemplo de texto rápido para demonstrar a descrição do problema enfrentado pela empreendedora iniciante.
+                                <img src="~/img/img8.jpg" alt="" class="user mb-3">
+                                <h3>Marcos Henrique</h3>
+                                <h5>Designer</h5>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Placeat nemo facilis, dolorum reprehenderit molestias quas
+                                    facere commodi corporis et.
                                 </p>
-                                <h5 class="card-tel">Whatsapp</h5>
-                                <p class="card-number">(81) 91111-1111</p>
-                                <a class="btn btn-card btn-primary" href="#">
-                                    <i class="fa-solid fa-circle-info"></i>
-                                </a>
-                                |
-                                <a class="btn btn-card btn-light" href="#">
-                                    <i class="fas fa-pencil-alt"></i>
-                                </a>
-                                |
-                                <a class="btn btn-card btn-danger" href="#">
-                                    <i class="fas fa-times"></i>
-                                </a>
+                                <div class="d-flex flex-row justify-content-center">
+                                    <div class="p-4">
+                                        <a href="#">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </div>
+                                    <div class="p-4">
+                                        <a href="#">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                    <div class="p-4">
+                                        <a href="#">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-4">
-                        <div class="card text-center" style="margin: 20px 10px;">
-                            <img src="https://www.weact.org/wp-content/uploads/2016/10/Blank-profile.png" alt="" />
+                        <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Nome</h4>
-                                <h5 class="card-subtitle mt-2">
-                                    Título referente ao que procura
-                                </h5>
-                                <p class="card-text mt-2">
-                                    Um exemplo de texto rápido para demonstrar a descrição do problema enfrentado pela empreendedora iniciante.
+                                <img src="~/img/img4.jpg" alt="" class="user mb-3">
+                                <h3>Alan Luz</h3>
+                                <h5>Desenvolvedor Web</h5>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Placeat nemo facilis, dolorum reprehenderit molestias quas
+                                    facere commodi corporis et.
                                 </p>
-                                <h5 class="card-tel">Whatsapp</h5>
-                                <p class="card-number">(81) 91111-1111</p>
-                                <a class="btn btn-card btn-primary" href="#">
-                                    <i class="fa-solid fa-circle-info"></i>
-                                </a>
-                                |
-                                <a class="btn btn-card btn-light" href="#">
-                                    <i class="fas fa-pencil-alt"></i>
-                                </a>
-                                |
-                                <a class="btn btn-card btn-danger" href="#">
-                                    <i class="fas fa-times"></i>
-                                </a>
+                                <div class="d-flex flex-row justify-content-center">
+                                    <div class="p-4">
+                                        <a href="#">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </div>
+                                    <div class="p-4">
+                                        <a href="#">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                    <div class="p-4">
+                                        <a href="#">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+          </div>
+       </section>
+        <!-- End Cards -->
     </main>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
